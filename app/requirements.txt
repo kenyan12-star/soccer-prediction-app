@@ -1,7 +1,8 @@
 streamlit
 pandas
-requests
-scipy
 numpy
+requests
 openpyxl
-statsmodels
+scikit-learn
+xgboost
+xlsxwriter
