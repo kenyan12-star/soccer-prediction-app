@@ -21,16 +21,17 @@ except:
 headers = {
     "x-apisports-key": API_KEY
 }
-
-url = "https://v3.football.api-sports.io/fixtures?next=30"
+url = "https://v3.football.api-sports.io/status"
 
 data = []
 
 try:
     response = requests.get(url, headers=headers, timeout=20)
     fixtures = response.json()
+st.write(fixtures)
 
-    if "response" in fixtures:
+    st.write("API Response:")
+st.json(fixtures)
 
         for match in fixtures["response"]:
 
